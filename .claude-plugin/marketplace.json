@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "session-continuity",
+  "description": "Standalone marketplace source for the session-continuity plugin.",
+  "owner": {
+    "name": "Meredith",
+    "url": "https://github.com/AfterRealm"
+  },
+  "plugins": [
+    {
+      "name": "session-continuity",
+      "description": "Detects prior session history for any project at startup, surfaces a \"where you left off\" digest, and renames the session for you — bumping the actual thread being continued, configurable, opt-out anytime.",
+      "category": "productivity",
+      "source": "./",
+      "homepage": "https://github.com/AfterRealm/session-continuity"
+    }
+  ]
+}

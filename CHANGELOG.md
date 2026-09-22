@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.1.1 — 2026-09-21
+
+### Fixed
+- `claude plugin marketplace add AfterRealm/session-continuity` — the
+  install command in this very README — didn't actually work. The repo
+  was published without its own `.claude-plugin/marketplace.json`
+  (mistakenly treated as a local-testing-only file), so there was
+  nothing for that command to find. Added it back; the repo now works
+  as a standalone marketplace source on its own, in addition to being
+  listed in the AfterRealm marketplace catalog.
+
 ## 2.1.0 — 2026-09-21
 
 ### Fixed
