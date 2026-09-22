@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.1.2 — 2026-09-22
+
+### Fixed
+- `/clear` never offered to name the new session. The hook only ran on
+  `startup` and `resume`, and even with `clear` added it would have
+  stayed quiet: Claude Code copies the old `/rename` name into the new
+  session's transcript, and the plugin read any title as "already asked."
+  It now runs on `/clear`, remembers which session ids it has asked
+  about (instead of inferring that from the title), and names the
+  carried-over title in the "keep current name" option.
+- Recovered names no longer repeat when `/clear` has copied a title
+  into several transcripts.
+
 ## 2.1.1 — 2026-09-21
 
 ### Fixed
